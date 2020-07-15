@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<style type="text/css">
+body{
+     background: #000;
+     margin: 0;
+     padding: 0;
+}
+h1 {
+    color: #69c;
+    font-family:"Times New Roman", Times, serif !important;;
+     text-align:center;
+}
+tr {
+      background-color:#0c9;
+      border-color:#fff;
+      color:#000;
+      font-family:"Times New Roman", Times, serif !important;;
+      text-align:center;vertical-align:center
+      }
+form{
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding 0 10px 10px 10px;
+}
+.excluir input{
+    background #069;
+    height: 40px;
+    width: 250px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid;
+    color: #000;
+    cursor: pointer;
+}
+.ver input{
+    background #069;
+    height: 40px;
+    width: 250px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid;
+    color: #000;
+    cursor: pointer;
+}
+.sair input{
+    background #069;
+    height: 40px;
+    width: 250px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid;
+    color: #000;
+    cursor: pointer;
+}
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Produtos</title>
+</head>
+<h1>Produtos disponiveis</h1>
+<body>
+    <table>
+        {% for i in p %}
+            <thead>
+                <td>{{i['Nome']}}
+                </td>
+            <td>{{i['Cod']}}
+                </td>
+            </thead>
+        {% endfor %}
+    </table>
+    <form method="post" action="/editar">
+        <p class="excluir">
+            <input type="number" name="cod" placeholder="Informe o codigo do produto" required="required">
+        </p>
+        <p class="excluir">
+            <input type="submit" name="excluir" value="Excluir">
+        </p>
+    </form>
+    <form action=http://127.0.0.1:5000/produto method="get">
+        <p class="ver">
+            <input type="submit" value=" Ver Produtos" class="submit">
+        </p>
+    </form>
+     <form action=http://127.0.0.1:5000/adm method="get">
+         <p class="sair">
+             <input type="submit" value=" Sair " class="submit">
+         </p>
+     </form>
+</body>
+</html>

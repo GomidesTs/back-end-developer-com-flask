@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<style type="text/css">
+body{
+     background: #000;
+     margin: 0;
+     padding: 0;
+}
+h1 {
+    color: #F00;
+    font-family:"Times New Roman", Times, serif !important;;
+     text-align:center;
+}
+form{
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding 0 0 0 0;
+}
+.compra input{
+    background #069;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid;
+    color: #000;
+    cursor: pointer;
+}
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Produtos</title>
+</head>
+<h1>Produtos</h1>
+<body>
+    <table>
+        {% for i in p %}
+                    <form method="post" action="/produto">
+                        <p class="compra">
+                            <input type="submit" value="{{i['Nome']}}" class="submit" name="produto">
+                        </p>
+                    </form>
+        {% endfor %}
+    </table>
+
+</body>
+</html>

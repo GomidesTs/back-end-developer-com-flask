@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<style type="text/css">
+body{
+     background: #000;
+     margin: 0;
+     padding: 0;
+}
+
+form{
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding 0 10px 10px 10px;
+}
+
+h1{
+    color: #F06;
+    font-family:"Times New Roman", Times, serif !important;;
+     text-align:center;
+}
+
+input, textarea{
+    width: 470px;
+    padding: 10px;
+}
+
+.cadastar input{
+    background #069;
+    height: 40px;
+    width: 150px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid;
+    color: #fff;
+    cursor: pointer;
+}
+
+.cadastro input{
+    background #069;
+    height: 40px;
+    width: 150px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid;
+    color: #000;
+    cursor: pointer;
+}
+
+.editar input{
+    background #069;
+    height: 40px;
+    width: 150px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid;
+    color: #000;
+    cursor: pointer;
+}
+
+.remover input{
+    background #069;
+    height: 40px;
+    width: 150px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid;
+    color: #000;
+    cursor: pointer;
+}
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Administrador</title>
+</head>
+<body>
+    <h1>Pagina do Administrador</h1>
+            <form action=http://127.0.0.1:5000/bancoProdutos method="get">
+                <p class="cadastro">
+                    <input type="submit" value="Cadastar Produtos" class="submit">
+                </p>
+            </form>
+            <form action=http://127.0.0.1:5000/editar method="get">
+                <p class="editar">
+                    <input type="submit" value="Editar Produtos" class="submit">
+                </p>
+            </form>
+            <form action=http://127.0.0.1:5000//listaUser method="get">
+                <p class="remover">
+                    <input type="submit" value="Remover Usuarios" class="submit">
+                </p>
+            </form>
+</body>
+</html>

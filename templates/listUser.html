@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<style type="text/css">
+body{
+     background: #000;
+     margin: 0;
+     padding: 0;
+}
+h1 {
+    color: #120;
+    font-family:"Times New Roman", Times, serif !important;;
+     text-align:center;
+}
+tr {
+      background-color:#069;
+      border-color:#fff;
+      color:#000;
+      font-family:"Times New Roman", Times, serif !important;;
+      text-align:center;vertical-align:center
+      }
+form{
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding 0 10px 10px 10px;
+}
+.excluir input{
+    background #069;
+    height: 40px;
+    width: 250px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid;
+    color: #000;
+    cursor: pointer;
+}
+
+.sair input{
+    background #069;
+    height: 40px;
+    width: 250px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid;
+    color: #000;
+    cursor: pointer;
+}
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Usuarios</title>
+</head>
+<h1> Usuarios </h1>
+<body>
+    <table>
+        {% for i in l %}
+            <thead>
+                <tr>
+                <tr><td>  <label>Nome: </label>{{i['Nome']}}</td></tr>
+                <tr><td>  <label>Endereco: </label>{{i['Endereco']}}</td></tr>
+                <tr><td>  <label>Email: </label>{{i['Email']}}</td></tr>
+                <tr><td>  <label>Telefone: </label>{{i['Telefone']}}</td><tr>
+                </tr>
+            </thead>
+        {% endfor %}
+    </table>
+    <form method="post" action="/listaUser">
+        <p class="excluir">
+            <input type="text" name="nome" placeholder="Informe o nome do usuario" required="required">
+        </p>
+        <p class="excluir">
+            <input type="submit" name="excluir" value="Excluir">
+        </p>
+    </form>
+     <form action=http://127.0.0.1:5000/adm method="get">
+         <p class="sair">
+             <input type="submit" value=" Sair " class="submit">
+         </p>
+     </form>
+</body>
+</html>

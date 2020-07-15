@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<style type="text/css">
+body{
+     background: #000;
+     margin: 0;
+     padding: 0;
+}
+
+form{
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding 0 10px 10px 10px;
+}
+
+h1{
+    color: #66F;
+    font-family:"Times New Roman", Times, serif !important;;
+     text-align:center;
+}
+
+input, textarea{
+    width: 470px;
+    padding: 10px;
+}
+
+.cadastrar input{
+    background #000;
+    height: 40px;
+    width: 150px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid;
+    color: #003;
+    cursor: pointer;
+}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+</head>
+    <h1> Cadastro de usuarios </h1>
+        <form method="post" action="/usuarios">
+            <p class="nome">
+                <input type="text" name="nome" placeholder="Informe seu nome" required="required">
+            </p>
+            <p class="endereco">
+                <input type="text" name="endereco" placeholder="Informe seu endereço" required="required">
+            </p>
+            <p class="email">
+                <input type="email" name="email"placeholder="Informe seu e-mail" required="required">
+            </p>
+            <p class="tel">
+                <input type="tel" name="telefone" placeholder="Informe seu telefone" required="required">
+            </p>
+            <p class="password">
+                <input type="password" name="passaword" placeholder="Informe sua senha" required="required">
+            </p>
+            <p class="cadastrar">
+             <input type="submit" name="cadastrar" value="Cadastrar">
+            </p>
+        </form>
+<body>
+
+</body>
+</html>

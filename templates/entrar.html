@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<style type="text/css">
+body{
+     background: #000;
+     margin: 0;
+     padding: 0;
+}
+
+form{
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding 0 10px 10px 10px;
+}
+
+h1{
+    color: #f00;
+    font-family:"Times New Roman", Times, serif !important;;
+     text-align:center;
+}
+
+input, textarea{
+    width: 470px;
+    padding: 10px;
+}
+
+.entrar input{
+    background #069;
+    height: 40px;
+    width: 150px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid;
+    color: #C39;
+    cursor: pointer;
+}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Entrar</title>
+</head>
+<body>
+    <h1> Entrar </h1>
+        <form method="post" action="/entrar">
+            <p class="nome">
+                <input type="text" name="user" placeholder="Digite seu nome" required="required">
+            </p>
+            <p class="password">
+                <input type="password" name="password"  placeholder="Digite sua senha" required="required">
+            </p>
+            <p class="entrar">
+                <input type="submit" name="entrar" value="Entrar">
+            </p>
+        </form>
+</body>
+</html>

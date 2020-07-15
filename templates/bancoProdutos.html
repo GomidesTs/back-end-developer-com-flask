@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<style type="text/css">
+body{
+     background: #000;
+     margin: 0;
+     padding: 0;
+}
+
+form{
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding 0 10px 10px 10px;
+}
+
+h1{
+    color: #3C6;
+    font-family:"Times New Roman", Times, serif !important;;
+     text-align:center;
+}
+
+input, textarea{
+    width: 470px;
+    padding: 10px;
+}
+
+.cadastrar input{
+    background #069;
+    height: 40px;
+    width: 150px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid;
+    color: #000;
+    cursor: pointer;
+}
+
+.ver input{
+    background #069;
+    height: 40px;
+    width: 150px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid;
+    color: #000;
+    cursor: pointer;
+}
+
+.sair input{
+    background #069;
+    height: 40px;
+    width: 150px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid;
+    color: #000;
+    cursor: pointer;
+}
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Banco de produtos</title>
+</head>
+<body>
+    <h1> Cadastro de produtos </h1>
+             <form method="post" action="/bancoProdutos">
+                 <p class="nome">
+                    <input type="text" name="nome" placeholder="Informe o nome do produto" required="required">
+                </p>
+                  <p class="cod">
+                    <input type="number" name="cod" placeholder="Informe o codigo produto" required="required">
+                </p>
+                <p class="tipo">
+                  <input type="text" name="tipo" placeholder="Informe o tipo do produto" required="required">
+                </p>
+                <p class="tamanho">
+                    <input type="text" name="tamanho" placeholder="Informe tamanho do produto" required="required">
+                </p>
+                <p class="preco">
+                    <input type="text" name="preco" placeholder="Informe o preço do produto" required="required">
+                </p>
+                <p class="password">
+                    <input type="number" name="quant" placeholder="Informe a quantidade em estoque" required="required">
+                </p>
+                <p class="cadastrar">
+                 <input type="submit" name="cadastrar" value="Cadastrar">
+                </p>
+            </form>
+            <form action=http://127.0.0.1:5000/produto method="get">
+                <p class="ver">
+                    <input type="submit" value=" Ver Produtos" class="submit">
+                </p>
+            </form>
+             <form action=http://127.0.0.1:5000/adm method="get">
+                 <p class="sair">
+                    <input type="submit" value=" Sair " class="submit">
+                 </p>
+             </form>
+</body>
+</html>

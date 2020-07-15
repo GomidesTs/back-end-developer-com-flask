@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<style type="text/css">
+body{
+     background: #000;
+     margin: 0;
+     padding: 0;
+}
+h1 {
+    color: #F60;
+    font-family:"Times New Roman", Times, serif !important;;
+     text-align:center;
+}
+tr {
+      background-color:#600;
+      border-color:#fff;
+      color:#000;
+      font-family:"Times New Roman", Times, serif !important;;
+      text-align:center;vertical-align:center
+      }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Produtos</title>
+</head>
+<h1>Seu Produto</h1>
+<body>
+    <table>
+        {% for i in p %}
+            <thead>
+                <tr>
+                <tr><td>  <label>Nome </label> {{i['Nome']}}</td></tr>
+                <tr><td>  <label>Tipo </label>{{i['Tipo']}}</td></tr>
+                <tr><td>  <label>Tamanho </label>{{i['Tamanho']}}</td></tr>
+                <tr><td>  <label>Preço </label>{{i['Preço']}}</td></tr>
+                <tr><td>  <label>Quantidade em estoque </label>{{i['Quant']}}</td><tr>
+                </tr>
+            </thead>
+        {% endfor %}
+    </table>
+
+</body>
+</html>

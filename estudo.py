@@ -95,4 +95,9 @@ def pro():
         return render_template('compra.html', p=pro)
 
 
+<<<<<<< HEAD
 app.run(debug=True)
+=======
+app.run(debug=True)
+
+>>>>>>> aabdc8e4e7816a312e02a2d3f71aaef1d2e549b3

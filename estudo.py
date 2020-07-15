@@ -1,9 +1,3 @@
-# Ecomerse
-# 1 pag principal
-# mostrar produtos
-# add produto via bd
-# mostrar produto detalhados
-
 from flask import Flask, render_template, request, redirect
 from flask_pymongo import PyMongo
 
